@@ -17,9 +17,12 @@
 
             this.querySelector('#add-slot')
                 .addEventListener('click', this.onClickAddSlot.bind(this), false);
+            this.querySelector('#add-slot')
+                .addEventListener('submit', this.onClickAddSlot.bind(this), false);
         }
 
-        onClickAddSlot() {
+        onClickAddSlot(e) {
+            e.preventDefault();
             const event = new CustomEvent('add-slot', {
                 detail: {
                     slot: this.slotColumn.value,
@@ -33,7 +36,7 @@
         }
 
         reset() {
-            this.slotColumn.value = '';
+            this.slotColumn.value = 1;
             this.slotName.value = '';
         }
     }
