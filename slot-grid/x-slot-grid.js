@@ -26,10 +26,10 @@
             for (let i = 0; i < nbRows; i++) {
                 rows +=
                 `<tr>
-                    <td class'${i}-0' >${slots[1][i] || ''}</td>
-                    <td class'${i}-1' >${slots[2][i] || ''}</td>
-                    <td class'${i}-2' >${slots[3][i] || ''}</td>
-                    <td class'${i}-3' >${slots[4][i] || ''}</td>
+                    <td class="${i}-0" >${slots[1][i] || ''}</td>
+                    <td class="${i}-1" >${slots[2][i] || ''}</td>
+                    <td class="${i}-2" >${slots[3][i] || ''}</td>
+                    <td class="${i}-3" >${slots[4][i] || ''}</td>
                 </tr>`;
             }
 
